@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Library</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_391052-12859.jpg">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        header {
+            color: rgba(255, 255, 255);
+            background-color: gray;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        nav {
+            height: 800px;
+            width: 30%;
+            float: left;
+            text-align: center;
+            background-image: url("https://marketplace.canva.com/EAFLUq0srDc/1/0/1131w/canva-brown-vintage-ornament-paper-border--cSCTzEGFxc.jpg");
+            background-size: 450px 800px;
+            background-color: rgb(128, 128, 128, .5);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            height: 800px;
+            width: 70%;
+            background-color: rgb(200, 208, 149, .5);
+            padding: 20px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            color: white;
+            background-color: rgb(38, 38, 38);
+            text-align: left;
+            font-size: 15px;
+            padding: 5px;
+            /* width: auto; */
+        }
+
+        .b {
+            color: white;
+            background-color: rgb(165, 42, 42);
+            padding: 10px;
+            display: inline-block;
+            text-decoration: none;
+            width: 25%;
+            text-align: center;
+
+        }
+        a.b:hover{
+            background-color: rgb(165, 42, 42,.5);
+        }
+        .b1 {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            display: inline-block;
+            text-decoration: none;
+            /* width: 25%; */
+            text-align: center;
+ 
+        }
+
+        /* a:hover {
+            background-color: rgb(255, 0, 0, .5)
+        } */
+        a.b1:hover {
+            background-color: rgb(170, 170, 170);
+        }
+
+        a.b2:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header
+        style="background-image: url('https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_391052-12859.jpg');">
+        <b>
+            <a class="b1" href="/Indian Lybrary.html" style="text-align: left;">Home</a>
+            <a class="b1" href="/Books.html">Books</a>
+            <a class="b1" href="/Video Tutorial.html">Video Tutorial</a>
+            <a class="b1" href="/login page.html">Login</a>
+        </b>
+        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">Indian
+            Library</h1>
+    </header>
+    <section>
+        <nav>
+            <p><br>
+            <h2 style="padding: 20px;">Click for details on article section:</h2>
+            <ul>
+                <p>
+                    <li><a class="b" onclick="ind()">India</a></li>
+                </p>
+                <p>
+                    <li><a class="b" onclick="del()">Delhi</a></li>
+                </p>
+                <p>
+                    <li><a class="b" onclick="mum()"> Mumbai </a></li>
+                </p>
+                <p>
+                    <li><a class="b" onclick="kol()"> Kolkata </a></li>
+                </p>
+                <p>
+                    <li><a class="b" onclick="goa()"> Goa </a></li>
+                </p>
+            </ul>
+            <h2>Click for more details on Wikipedia:</h2>
+            </p>
+            <ul>
+                <p>
+                    <li><a class="b" href="https://en.wikipedia.org/wiki/India">India</a></li>
+                </p>
+                <p>
+                    <li><a class="b" href="https://en.wikipedia.org/wiki/Delhi">Delhi</a></li>
+                </p>
+                <p>
+                    <li><a class="b" href="https://en.wikipedia.org/wiki/Mumbai"> Mumbai </a></li>
+                </p>
+                <p>
+                    <li><a class="b" href="https://en.wikipedia.org/wiki/Kolkata"> Kolkata </a></li>
+                </p>
+                <p>
+                    <li><a class="b" href="https://en.wikipedia.org/wiki/Goa"> Goa </a></li>
+                </p>
+            </ul>
+        </nav>
+        <article>
+            <h1 style="font-size: 30px;">Article Section : </h1>
+            <p id="art1" style="font-size: 35px;"></p>
+            <script>
+                var artcl = getElementById("art1");
+
+                function ind() {
+                    document.getElementById("art1").innerHTML = "India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area; the most populous country as of June 2023; and from the time of its independence in 1947, the world's most populous democracy.";
+                }
+
+                function del() {
+                    document.getElementById("art1").innerHTML = "Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people. Nearby is Chandni Chowk, a vibrant bazaar filled with food carts, sweets shops and spice stalls.";
+                }
+
+                function kol() {
+                    document.getElementById("art1").innerHTML = "Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an East India Company trading post, it was India's capital under the British Raj from 1773–1911. Today it’s known for its grand colonial architecture, art galleries and cultural festivals. It’s also home to Mother House, headquarters of the Missionaries of Charity, founded by Mother Teresa, whose tomb is on site.";
+                }
+
+                function mum() {
+                    document.getElementById("art1").innerHTML = "Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924. Offshore, nearby Elephanta Island holds ancient cave temples dedicated to the Hindu god Shiva. The city's also famous as the heart of the Bollywood film industry.";
+                }
+
+                function goa() {
+                    document.getElementById("art1").innerHTML = "Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda.";
+                }
+            </script>
+
+        </article>
+    </section>
+    <footer>
+        <p>Contuct Us: <a class="b2" href="mailto:xyz@gmail.com" style="color: rgb(158, 158, 158);">xyz@gmail.ocm</a>
+        </p>
+        <p>Name: Sk Mainul</p>
+        <p>country: India</p>
+
+    </footer>
+</body>
+
+</html>
