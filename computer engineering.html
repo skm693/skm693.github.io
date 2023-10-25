@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +21,7 @@
             padding: 20px;
             /* width: auto; */
         }
+
         article {
             float: left;
             height: 800px;
@@ -40,7 +41,8 @@
             background-color: rgb(38, 38, 38);
             text-align: left;
             font-size: 15px;
-            padding: 5px;        }
+            padding: 5px;
+        }
 
         .b {
             color: white;
@@ -52,17 +54,20 @@
             text-align: center;
 
         }
-        a.b:hover{
-            background-color:rgb(165, 42, 42,.5) ;
+
+        a.b:hover {
+            background-color: rgb(165, 42, 42, .5);
         }
-        .bb{
-            background-color: rgb(165, 42, 42,.5);
+
+        .bb {
+            background-color: rgb(165, 42, 42, .5);
             display: inline-block;
             text-align: center;
             text-decoration: none;
             padding: 10px;
             color: white;
         }
+
         .b1 {
             color: rgb(0, 0, 0);
             font-size: 15px;
@@ -74,16 +79,19 @@
             text-align: center;
 
         }
-        a.b1:hover{
+
+        a.b1:hover {
             background-color: rgb(170, 170, 170);
         }
-        a.b2:hover{
+
+        a.b2:hover {
             background-color: white;
             color: black;
         }
-        table, td, th {
+
+        .tb {
             border: 2px solid black;
-            border-collapse:collapse;
+            border-collapse: collapse;
             text-align: center;
             padding: 5px;
             font-size: 20px;
@@ -95,84 +103,117 @@
 <body>
     <header
         style="background-image: url('https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_391052-12859.jpg');">
-        <b>
-            <a class="b1" href="/index.html" style="text-align: left;">Home</a>
-            <a class="b1" href="/Books.html">Books</a>
-            <a class="b1" href="/Video Tutorial.html">Video Tutorial</a>
-            <a class="b1" href="/login page.html">Login</a>
-        </b>
-        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;" >Indian Library</h1>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 50%;">
+                    <b>
+                        <a class="b1" href="/index.html" style="text-align: left;">Home</a>
+                        <a class="b1" href="/Books.html">Books</a>
+                        <a class="b1" href="/Video Tutorial.html">Video Tutorial</a>
+                    </b>
+                </td>
+                <td style="text-align: right;">
+                    <b>
+                        <a href="/computer engineering dark.html"><img src="https://cdn-icons-png.flaticon.com/128/7269/7269735.png"
+                                style="width: 40px; vertical-align: bottom;margin-right: 10px;"></a>
+                        <a class="b1" href="/login page.html">Login</a>
+                    </b>
+                </td>
+            </tr>
+        </table>
+        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">Indian
+            Library</h1>
     </header>
     <section>
         <article>
             <h1 style="font-size: 40px;">Computer Engineering Books :</h1>
             <div>
                 <h1 style="font-size: 25px;">C Language :</h1>
-                <table style="width: 100%;">
+                <table class="tb" style="width: 100%;">
                     <tr>
-                        <th style="width: 40%;">Book Name</th>
-                        <th style="width: 40%;">Author</th>
-                        <th>Download PDF</th>
+                        <th class="tb" style="width: 40%;">Book Name</th>
+                        <th class="tb" style="width: 40%;">Author</th>
+                        <th class="tb">Download PDF</th>
                     </tr>
                     <tr>
-                        <td style="width: 40%;">Les us C</td>
-                        <td style="width: 40%;">Yashwant Kanetkar</td>
-                        <td><a href="https://instapdf.in/let-us-c-by-yashwant-kanetkar-2/">Download Link</a></td>
+                        <td class="tb" style="width: 40%;">Les us C</td>
+                        <td class="tb" style="width: 40%;">Yashwant Kanetkar</td>
+                        <td class="tb"><a href="https://instapdf.in/let-us-c-by-yashwant-kanetkar-2/">Download Link</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td style="width: 40%;">C in depth</td>
-                        <td style="width: 40%;">S.K Srivastava/Deepali Srivastava</td>
-                        <td><a href="https://www.scribd.com/document/408512187/C-in-Depth-by-Shrivadtava-pdf">Download Link</a></td>
+                        <td class="tb" style="width: 40%;">C in depth</td>
+                        <td class="tb" style="width: 40%;">S.K Srivastava/Deepali Srivastava</td>
+                        <td class="tb"><a
+                                href="https://www.scribd.com/document/408512187/C-in-Depth-by-Shrivadtava-pdf">Download
+                                Link</a></td>
                     </tr>
                     <tr>
-                        <td style="width: 40%;">The C Programming Language</td>
-                        <td style="width: 40%;">Kernighan & Ritchie</td>
-                        <td><a href="https://colorcomputerarchive.com/repo/Documents/Books/The%20C%20Programming%20Language%20(Kernighan%20Ritchie).pdf">Download Link</a></td>
+                        <td class="tb" style="width: 40%;">The C Programming Language</td>
+                        <td class="tb" style="width: 40%;">Kernighan & Ritchie</td>
+                        <td class="tb"><a
+                                href="https://colorcomputerarchive.com/repo/Documents/Books/The%20C%20Programming%20Language%20(Kernighan%20Ritchie).pdf">Download
+                                Link</a></td>
                     </tr>
                     <tr>
-                        <td style="width: 40%;">C The Complete Reference</td>
-                        <td style="width: 40%;">Herbert Schildt</td>
-                        <td><a href="https://github.com/b09/c_resources/blob/master/C%20The%20Complete%20Reference%204th%20Ed%20Herbert%20Schildt.pdf">Download Link</a></td>
+                        <td class="tb" style="width: 40%;">C The Complete Reference</td>
+                        <td class="tb" style="width: 40%;">Herbert Schildt</td>
+                        <td class="tb"><a
+                                href="https://github.com/b09/c_resources/blob/master/C%20The%20Complete%20Reference%204th%20Ed%20Herbert%20Schildt.pdf">Download
+                                Link</a></td>
                     </tr>
                     <tr>
-                        <td style="width: 40%;">C Programming: A Modern Approach</td>
-                        <td style="width: 40%;">K. N King</td>
-                        <td><a href="https://github.com/Embed-Threads/Learn-C/blob/main/books/c-programming-a-modern-approach-2nbsped-0393979504-9780393979503_compress.pdf">Download Link</a></td>
+                        <td class="tb" style="width: 40%;">C Programming: A Modern Approach</td>
+                        <td class="tb" style="width: 40%;">K. N King</td>
+                        <td class="tb"><a
+                                href="https://github.com/Embed-Threads/Learn-C/blob/main/books/c-programming-a-modern-approach-2nbsped-0393979504-9780393979503_compress.pdf">Download
+                                Link</a></td>
                     </tr>
                     <tr>
-                        <td style="width: 40%;">C Programming Absolute Beginner's Guide</td>
-                        <td style="width: 40%;">Greg Perry and Dean Miller</td>
-                        <td><a href="https://usermanual.wiki/Pdf/CProgrammingAbsoluteBeginnersGuide3rdEditio.424140197.pdf">Download Link</a></td>
+                        <td class="tb" style="width: 40%;">C Programming Absolute Beginner's Guide</td>
+                        <td class="tb" style="width: 40%;">Greg Perry and Dean Miller</td>
+                        <td class="tb"><a
+                                href="https://usermanual.wiki/Pdf/CProgrammingAbsoluteBeginnersGuide3rdEditio.424140197.pdf">Download
+                                Link</a></td>
                     </tr>
                     <tr>
-                        <td style="width: 40%;">Computer Fundamentals & Programming in C</td>
-                        <td style="width: 40%;">Reema Thareja</td>
-                        <td><a href="https://gacbe.ac.in/pdf/ematerial/18BIT13C-U1.pdf">Download Link</a></td>
+                        <td class="tb" style="width: 40%;">Computer Fundamentals & Programming in C</td>
+                        <td class="tb" style="width: 40%;">Reema Thareja</td>
+                        <td class="tb"><a href="https://gacbe.ac.in/pdf/ematerial/18BIT13C-U1.pdf">Download Link</a>
+                        </td>
                     </tr>
                 </table>
             </div>
             <div>
                 <h1 style="font-size: 25px;">C++ Language :</h1>
-                <table style="width:100%">
+                <table class="tb" style="width:100%">
                     <tr>
-                        <th style="width: 40%;">Book Name</th>
-                        <th style="width: 40%;">Author</th>
-                        <th>Download PDF</th>
+                        <th class="tb" style="width: 40%;">Book Name</th>
+                        <th class="tb" style="width: 40%;">Author</th>
+                        <th class="tb">Download PDF</th>
                     </tr>
                     <tr>
-                        <td style="width: 40%;">The C++ Programming Language</td>
-                        <td style="width: 40%;">Bjarne Stroustrup</td>
-                        <td><a href="http://chenweixiang.github.io/docs/The_C++_Programming_Language_4th_Edition_Bjarne_Stroustrup.pdf">Download Link</a></td>
+                        <td class="tb" style="width: 40%;">The C++ Programming Language</td>
+                        <td class="tb" style="width: 40%;">Bjarne Stroustrup</td>
+                        <td class="tb"><a
+                                href="http://chenweixiang.github.io/docs/The_C++_Programming_Language_4th_Edition_Bjarne_Stroustrup.pdf">Download
+                                Link</a></td>
                     </tr>
                     <tr>
-                        <td style="width: 40%;">C++ Primer</td>
-                        <td style="width: 40%;">Stanley B. Lippman/Josée Lajoie/Barbara E. Moo</td>
-                        <td><a href="https://zhjwpku.com/assets/pdf/books/C++.Primer.5th.Edition_2013.pdf">Download Link</a></td>
+                        <td class="tb" style="width: 40%;">C++ Primer</td>
+                        <td class="tb" style="width: 40%;">Stanley B. Lippman/Josée Lajoie/Barbara E. Moo</td>
+                        <td class="tb"><a
+                                href="https://zhjwpku.com/assets/pdf/books/C++.Primer.5th.Edition_2013.pdf">Download
+                                Link</a></td>
                     </tr>
                     <tr>
-                        <td style="width: 40%;">Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14</td>
-                        <td style="width: 40%;">Scott Meyers</td>
-                        <td><a href="https://github.com/vpreethamkashyap/Library/blob/master/Scott%20Meyers-Effective%20Modern%20C%2B%2B_%2042%20Specific%20Ways%20to%20Improve%20Your%20Use%20of%20C%2B%2B11%20and%20C%2B%2B14-O'Reilly%20Media%20(2014).pdf">Download Link</a></td>
+                        <td class="tb" style="width: 40%;">Effective Modern C++: 42 Specific Ways to Improve Your Use of
+                            C++11 and
+                            C++14</td>
+                        <td class="tb" style="width: 40%;">Scott Meyers</td>
+                        <td class="tb"><a
+                                href="https://github.com/vpreethamkashyap/Library/blob/master/Scott%20Meyers-Effective%20Modern%20C%2B%2B_%2042%20Specific%20Ways%20to%20Improve%20Your%20Use%20of%20C%2B%2B11%20and%20C%2B%2B14-O'Reilly%20Media%20(2014).pdf">Download
+                                Link</a></td>
                     </tr>
                 </table>
             </div>
@@ -183,10 +224,11 @@
                 <a class="b" href="/cmp eng bk3.html">3</a>
                 <a class="b" href="/cmp eng bk2.html">></a>
             </div>
-        </article>   
+        </article>
     </section>
     <footer>
-        <p>Contuct Us: <a class="b2" href="mailto:xyz@gmail.com" style="color: rgb(158, 158, 158);">xyz@gmail.ocm</a></p>
+        <p>Contuct Us: <a class="b2" href="mailto:xyz@gmail.com" style="color: rgb(158, 158, 158);">xyz@gmail.ocm</a>
+        </p>
         <p>Name: Sk Mainul</p>
         <p>country: India</p>
 
