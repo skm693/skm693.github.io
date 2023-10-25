@@ -16,10 +16,8 @@
         header {
             color: rgba(255, 255, 255);
             background-color: gray;
-            /* text-align: center; */
             font-size: 30px;
             padding: 20px;
-            /* width: auto; */
         }
 
         article {
@@ -101,46 +99,56 @@
             color: black;
         }
 
-        table {
+        .tb {
             border: 2px solid black;
             border-collapse: collapse;
             text-align: center;
             padding: 5px;
             font-size: 20px;
             background-color: rgb(189, 192, 174);
-        }
-
-        .tab {
             width: 30%;
             margin-left: auto;
             margin-right: auto;
         }
+
+       
     </style>
 </head>
 
 <body>
     <header
         style="background-image: url('https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_391052-12859.jpg');">
-        <b>
-            <a class="b1" href="/index.html" style="text-align: left;">Home</a>
-            <a class="b1" href="/Books.html">Books</a>
-            <a class="b1" href="/Video Tutorial.html">Video Tutorial</a>
-            <a class="b1" href="/login page.html">Login</a>
-        </b>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 50%;">
+                    <b>
+                        <a class="b1" href="/index.html" style="text-align: left;">Home</a>
+                        <a class="b1" href="/Books.html">Books</a>
+                        <a class="b1" href="/Video Tutorial.html">Video Tutorial</a>
+                    </b>
+                </td>
+                <td style="text-align: right;"> 
+                    <b>
+                        <a href="/login page Dark.html"><img src="https://cdn-icons-png.flaticon.com/128/7269/7269735.png" style="width: 40px; vertical-align: bottom;margin-right: 10px;"></a>
+                        <a class="b1" href="/login page.html">Login</a>
+                    </b>                      
+                </td>
+            </tr>
+        </table>
         <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">Indian
             Library</h1>
     </header>
     <section>
         <article>
             <div>
-                <table class="tab">
+                <table class="tb">
                     <tr>
-                        <th>
+                        <th class="tb" style="border-bottom: none;">
                             <h1 style="font-size: 30px;text-align: center;">Login Page</h1>
                         </th>
                     </tr>
                     <tr>
-                        <td style="text-align: left; padding-left: 20px;">
+                        <td class="tb" style="text-align: left; padding-left: 20px; border-top: none;">
                             <form>
                                 <label for="fn">First Name :</label>
                                 <br>
